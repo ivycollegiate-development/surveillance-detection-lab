@@ -1,0 +1,9 @@
+{
+  "name": "Surveillance Detection Lab",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "customizations": {
+    "vscode": {
+      "extensions": ["github.vscode-pull-request-github"]
+    }
+  }
+}

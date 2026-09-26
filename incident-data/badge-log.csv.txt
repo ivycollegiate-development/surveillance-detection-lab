@@ -1,0 +1,50 @@
+# Badge Reader Log — Building A
+
+Extracted from the office recorder. **Retention policy: 7 days**, then
+overwritten. This export was taken on day 3 after the incident was reported, so
+it contains everything from the night of the incident onward.
+
+Format: `timestamp, badge_id, door, result`
+
+---
+
+```
+2026-09-28 17:42:11, B-1041, MAIN_OFFICE, GRANTED
+2026-09-28 18:03:55, B-1041, MAIN_OFFICE, EXIT
+2026-09-28 18:07:02, B-1002, LIBRARY, GRANTED
+2026-09-28 18:12:44, B-1002, LIBRARY, EXIT
+2026-09-28 20:15:33, B-0777, MAIN_OFFICE, GRANTED
+2026-09-28 20:15:41, B-1041, MAIN_OFFICE, GRANTED
+2026-09-28 20:16:09, B-0777, MAIN_OFFICE, EXIT
+2026-09-28 22:48:20, B-1002, LIBRARY, GRANTED
+2026-09-28 22:48:28, B-0777, LIBRARY, GRANTED
+2026-09-28 22:51:03, B-1002, LIBRARY, EXIT
+2026-09-28 22:51:15, B-0777, LIBRARY, EXIT
+2026-09-28 23:30:07, B-1041, MAIN_OFFICE, GRANTED
+2026-09-28 23:44:52, B-1041, MAIN_OFFICE, EXIT
+2026-09-29 06:58:11, B-1002, MAIN_OFFICE, GRANTED
+2026-09-29 07:01:39, B-1002, MAIN_OFFICE, EXIT
+2026-09-29 07:44:20, B-1041, MAIN_OFFICE, GRANTED
+2026-09-29 07:52:03, B-1041, MAIN_OFFICE, EXIT
+2026-09-29 08:15:00, B-1002, MAIN_OFFICE, GRANTED
+2026-09-29 08:15:22, B-1002, MAIN_OFFICE, EXIT
+```
+
+---
+
+## Badge registry (partial)
+
+| Badge | Holder | Role | Notes |
+|---|---|---|---|
+| B-1002 | R. Alvarez | Librarian | Badge reported lost 2026-09-24, not yet deactivated |
+| B-1041 | M. Osei | Assistant Principal | |
+| B-0777 | **NO HOLDER** | — | Not in the registry. Last issued 2024 to a staff member who left in June 2025. |
+
+## Notes from the registrar
+
+- The system was not configured to invalidate B-0777 on separation. The badge
+  was deactivated "at some point" and there is no record of when.
+- B-1002's lost badge report was filed on 2026-09-24. Facilities said a
+  replacement would be issued "after the ordering run."
+- The log records **badge ID only.** It does not record a person, and it cannot
+  distinguish the holder from anyone else holding that badge.

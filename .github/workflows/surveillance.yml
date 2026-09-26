@@ -1,0 +1,19 @@
+name: surveillance-gate
+
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Blank template still fails (selftest)
+        run: python3 scripts/check_report.py --selftest
+
+      - name: Incident report is complete and sourced
+        run: python3 scripts/check_report.py

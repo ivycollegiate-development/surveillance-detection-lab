@@ -1,0 +1,17 @@
+name: Missing Control
+about: Report a detection gap the building should not have
+title: "[GAP] control that should exist"
+labels: finding
+assignees: ""
+
+body: |
+  **Control code:** MOTION / THERMAL / ACOUSTIC / ACCESS / VIDEO / ALARM
+
+  **The gap**
+  What is missing or broken, and where.
+
+  **What it would have caught**
+  Which part of this incident it would have detected, and how quickly.
+
+  **Why it is the first change**
+  Why this beats the other recommendations.
