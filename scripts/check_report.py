@@ -247,14 +247,18 @@ def main():
     problems = check(text)
 
     if selftest:
-        if not problems:
+        # Test the EMBEDDED template, not the live report. On a student pull
+        # request the live report is already complete, so checking it here
+        # would report the rules as broken and fail every good submission.
+        template_problems = check(_TEMPLATE)
+        if not template_problems:
             print("SELFTEST FAIL: blank template passed the gate (rules are broken)")
             sys.exit(1)
-        print(f"  blank template correctly fails with {len(problems)} problem(s):")
-        for p in problems[:8]:
+        print(f"  blank template correctly fails with {len(template_problems)} problem(s):")
+        for p in template_problems[:8]:
             print(p)
-        if len(problems) > 8:
-            print(f"  ... and {len(problems) - 8} more")
+        if len(template_problems) > 8:
+            print(f"  ... and {len(template_problems) - 8} more")
         print("selftest OK")
         sys.exit(0)
 
